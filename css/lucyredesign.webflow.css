@@ -524,12 +524,6 @@ a {
     }
 }
 
-@media (max-width: 991px) {
-    .mydescbox {
-        width: 86vw;
-    }
-}
-
 @media (max-width: 767px) {
     .myname {
         font-size: 1.6em;
@@ -1330,10 +1324,10 @@ a {
     right: 0%;
     bottom: 0%;
     display: block;
-    overflow: scroll;
     width: 80%;
     height: auto;
-    padding: 10vh 0vw 10vh 6vw;
+    padding: 0 6vw;
+    margin: 10vh 0;
     float: right;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1354,6 +1348,7 @@ a {
     -webkit-align-content: flex-start;
     -ms-flex-line-pack: start;
     align-content: flex-start;
+    background-color: inherit;
 }
 
 .intro {
@@ -1420,9 +1415,7 @@ a {
 
 .paragraph-4 {
     width: 40vw;
-    max-width: none;
-    margin-top: 0px;
-    margin-bottom: 5vh;
+    margin: 0px;
     font-family: 'IBM Plex Mono', sans-serif;
     color: #c4c4c4;
     font-size: 16px;
@@ -1610,7 +1603,7 @@ a {
 }
 
 .homegridtext2 {
-    margin-top: 1vh;
+    margin: 25px 0 100px;
 }
 
 .projhead {
@@ -1662,6 +1655,14 @@ a {
 }
 
 @media (max-width: 991px) {
+    .leftbar {
+        width: 100%;
+    }
+    .title {
+        top: 5%;
+        left: 6vw;
+        width: fit-content;
+    }
     .desc {
         line-height: 21px;
     }
@@ -1798,6 +1799,8 @@ a {
     }
     .right {
         padding-bottom: 10vh;
+        left: 0;
+        width: 100%;
     }
     .intro {
         width: 18vw;
@@ -1809,8 +1812,7 @@ a {
         margin-left: 0vw;
     }
     .paragraph-4 {
-        width: 40vw;
-        max-width: none;
+        width: 100%;
     }
     .columns-3 {
         margin-right: 100px;
@@ -1823,6 +1825,10 @@ a {
     .homegrid-3 {
         width: 55vw;
         max-width: none;
+        width: 100%;
+    }
+    .homegridtext2 {
+        margin: 2vw 0 10vw;
     }
     .newabout {
         position: static;
@@ -1833,9 +1839,6 @@ a {
         position: absolute;
         margin-top: 3vh;
         margin-left: 5vw;
-    }
-    .homegridtext2 {
-        margin-top: 1vh;
     }
     .newfootalwork {
         position: static;
@@ -2025,8 +2028,6 @@ a {
         margin-left: 0vw;
     }
     .paragraph-4 {
-        width: auto;
-        max-width: none;
         font-size: 15px;
     }
     .column-6 {
@@ -2049,10 +2050,10 @@ a {
         margin-right: 40px;
         margin-left: 40px;
     }
-    .homegrid-3 {
+    /* .homegrid-3 {
         width: 60vw;
         max-width: none;
-    }
+    } */
     .newabout {
         margin-top: -1vh;
         line-height: 26px;
@@ -2060,10 +2061,6 @@ a {
     .newfootalhome {
         margin-top: 6vh;
         margin-left: 6vw;
-    }
-    .homegridtext2 {
-        width: 50vw;
-        margin-top: 1vh;
     }
     .newfootalwork {
         margin-top: 15vh;
@@ -2269,36 +2266,9 @@ a {
         top: 5%;
         font-size: 15px;
     }
-    .leftbar {
-        width: 25%;
-    }
     .allleftnav {
         bottom: 5%;
         margin-top: 0px;
-    }
-    .right {
-        display: block;
-        overflow: auto;
-        width: 75%;
-        margin-bottom: 0vh;
-        padding-top: 5vh;
-        padding-bottom: 4vh;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: reverse;
-        -webkit-flex-direction: row-reverse;
-        -ms-flex-direction: row-reverse;
-        flex-direction: row-reverse;
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -webkit-box-align: start;
-        -webkit-align-items: flex-start;
-        -ms-flex-align: start;
-        align-items: flex-start;
-        -webkit-align-content: flex-start;
-        -ms-flex-line-pack: start;
-        align-content: flex-start;
     }
     .intro {
         top: 5.5%;
@@ -2317,8 +2287,6 @@ a {
         font-size: 11px;
     }
     .paragraph-4 {
-        width: 57vw;
-        max-width: none;
         font-size: 11px;
         line-height: 15px;
     }
@@ -2348,7 +2316,7 @@ a {
         display: -ms-flexbox;
         display: flex;
         overflow: visible;
-        width: 57vw;
+        /* width: 57vw; */
         padding-left: 0px;
         float: none;
         -webkit-box-pack: start;
@@ -2359,10 +2327,6 @@ a {
     .columns-4 {
         margin-right: 33px;
         margin-left: 33px;
-    }
-    .homegrid-3 {
-        width: 57vw;
-        max-width: none;
     }
     .paragraph-5 {
         font-size: 14px;
@@ -2383,9 +2347,6 @@ a {
         margin-right: 7vw;
         margin-left: 6vw;
         font-size: 11px;
-    }
-    .homegridtext2 {
-        margin-top: 1vh;
     }
     .newfootalwork {
         bottom: 7%;
