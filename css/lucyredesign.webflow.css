@@ -1227,7 +1227,7 @@ a {
 .title {
     position: absolute;
     left: auto;
-    top: 10%;
+    top: 8vw;
     right: 0%;
     bottom: auto;
     margin-top: 0px;
@@ -1325,9 +1325,9 @@ a {
     bottom: 0%;
     display: block;
     width: 80%;
-    height: auto;
+    height: fit-content;
     padding: 0 6vw;
-    margin: 10vh 0;
+    margin: 20vw 0;
     float: right;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1659,7 +1659,7 @@ a {
         width: 100%;
     }
     .title {
-        top: 5%;
+        top: 8vw;
         left: 6vw;
         width: fit-content;
     }
@@ -1849,6 +1849,9 @@ a {
 }
 
 @media (max-width: 767px) {
+    .title {
+        top: 60px;
+    }
     .desc {
         width: 100%;
         line-height: 21px;
@@ -2017,6 +2020,7 @@ a {
         -webkit-justify-content: flex-start;
         -ms-flex-pack: start;
         justify-content: flex-start;
+        margin: 150px 0;
     }
     .intro {
         width: 30vw;
@@ -2144,9 +2148,6 @@ a {
     .headerimage {
         margin-top: 60px;
     }
-    /* .paragraph {
-    font-size: 14px;
-  } */
     .homegridtitle {
         font-size: 15px;
         line-height: 20px;
@@ -2261,10 +2262,6 @@ a {
     .columns-75 {
         margin-right: 30px;
         margin-left: 30px;
-    }
-    .title {
-        top: 5%;
-        font-size: 15px;
     }
     .allleftnav {
         bottom: 5%;
